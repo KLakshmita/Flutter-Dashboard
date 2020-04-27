@@ -1,5 +1,7 @@
-import 'package:fitness_app/pages/welcome.dart';
+//import 'package:fitness_app/pages/welcome.dart';
 import 'package:flutter/material.dart';
+//import 'dashboard.dart';
+import 'package:fitness_app/pages/dashboard.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +17,8 @@ class MyApp extends StatelessWidget {
         accentColor: Color(0XFF233C63),
         fontFamily: 'Poppins',
       ),
-      home: Welcome(),
+     //home: Welcome(),
+     home: Dashboard(),
     );
   }
 }

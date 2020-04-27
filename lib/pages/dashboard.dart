@@ -11,11 +11,11 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[900],
       appBar: AppBar(
         elevation: 0,
         titleSpacing: 10,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white70,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -35,7 +35,7 @@ class _DashboardState extends State<Dashboard> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'Julia Vins',
+                  'Laura Adam',
                   style: TextStyle(
                     color: Theme.of(context).accentColor,
                     fontSize: 16,
@@ -43,7 +43,7 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ),
                 Text(
-                  'Feb 25, 2018',
+                  'Aril 15, 2020',
                   style: TextStyle(
                     color: Theme.of(context).accentColor,
                     fontSize: 12,
@@ -104,16 +104,16 @@ class _DashboardState extends State<Dashboard> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Container(
-                  width: 70,
-                  height: 70,
+                  width: 100,
+                  height: 100,
                   padding: EdgeInsets.all(15),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
-                    color: Theme.of(context).primaryColor.withAlpha(50),
+                    //color: Theme.of(context).accentColor.withAlpha(50),
                   ),
                   child: Image.asset(
-                    'assets/img/shoe.png',
-                    width: 60,
+                    'assets/img/abc2.png',
+                    width: 70,
                   ),
                 ),
                 Padding(
@@ -122,7 +122,9 @@ class _DashboardState extends State<Dashboard> {
                 Text(
                   '6522',
                   style: TextStyle(
-                    color: Theme.of(context).primaryColor,
+                   // color: Theme.of(context).primaryColor,
+                    //color: Color.,
+                    color: Colors.lightBlueAccent,
                     fontSize: 80,
                     fontFamily: 'Bebas',
                     fontWeight: FontWeight.bold,
@@ -142,13 +144,13 @@ class _DashboardState extends State<Dashboard> {
                           Text(
                             '0 Steps'.toUpperCase(),
                             style: TextStyle(
-                              color: Colors.grey,
+                              color: Colors.white,
                             ),
                           ),
                           Text(
                             '9000 Steps'.toUpperCase(),
                             style: TextStyle(
-                              color: Colors.grey,
+                              color: Colors.white,
                             ),
                           ),
                         ],
@@ -158,8 +160,10 @@ class _DashboardState extends State<Dashboard> {
                         percent: 0.7,
                         linearStrokeCap: LinearStrokeCap.roundAll,
                         backgroundColor:
-                            Theme.of(context).accentColor.withAlpha(30),
-                        progressColor: Theme.of(context).primaryColor,
+                            Theme.of(context).primaryColor.withAlpha(30),
+                        progressColor: Colors.cyanAccent[400], 
+                        //Theme.of(context).primaryColor,
+                        
                       ),
                       Padding(
                         padding: EdgeInsets.only(top: 30),
@@ -167,7 +171,8 @@ class _DashboardState extends State<Dashboard> {
                       Text(
                         'Steps Taken'.toUpperCase(),
                         style: TextStyle(
-                          color: Theme.of(context).accentColor,
+                          //color: Theme.of(context).accentColor,
+                          color: Colors.blue[100],
                           fontFamily: 'Bebas',
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
@@ -176,7 +181,8 @@ class _DashboardState extends State<Dashboard> {
                       Text(
                         'You walked 165 min today',
                         style: TextStyle(
-                          color: Theme.of(context).accentColor,
+                          //color: Theme.of(context).accentColor,
+                          color: Colors.blue[100],
                           fontSize: 16,
                         ),
                       ),
@@ -209,14 +215,15 @@ class _DashboardState extends State<Dashboard> {
                                     text: '8500',
                                     style: TextStyle(
                                       fontSize: 20,
-                                      color: Theme.of(context).accentColor,
+                                      //color: Theme.of(context).accentColor,
+                                       color: Colors.indigo[300],
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
                                   TextSpan(
                                     text: ' m',
                                     style: TextStyle(
-                                      color: Colors.grey,
+                                      color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -245,14 +252,15 @@ class _DashboardState extends State<Dashboard> {
                                     text: '259',
                                     style: TextStyle(
                                       fontSize: 20,
-                                      color: Theme.of(context).accentColor,
+                                      //color: Theme.of(context).accentColor,
+                                       color: Colors.indigo[300],
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
                                   TextSpan(
                                     text: ' cal',
                                     style: TextStyle(
-                                      color: Colors.grey,
+                                      color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -281,14 +289,15 @@ class _DashboardState extends State<Dashboard> {
                                     text: '102',
                                     style: TextStyle(
                                       fontSize: 20,
-                                      color: Theme.of(context).accentColor,
+                                      //color: Theme.of(context).accentColor,
+                                       color: Colors.indigo[300],
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
                                   TextSpan(
                                     text: ' bpm',
                                     style: TextStyle(
-                                      color: Colors.grey,
+                                      color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -314,7 +323,8 @@ class _DashboardState extends State<Dashboard> {
                     Text(
                       'DIET PROGRESS',
                       style: TextStyle(
-                        color: Theme.of(context).accentColor,
+                        //color: Theme.of(context).accentColor,
+                        color: Colors.indigo[300],
                         fontSize: 24,
                         fontFamily: 'Bebas',
                         fontWeight: FontWeight.bold,
@@ -352,7 +362,7 @@ class _DashboardState extends State<Dashboard> {
                         title: 'Carbs',
                         achieved: 200,
                         total: 350,
-                        color: Colors.orange,
+                        color: Colors.pinkAccent,
                         image: Image.asset('assets/img/bolt.png', width: 20),
                       ),
                       StatCard(
@@ -368,6 +378,20 @@ class _DashboardState extends State<Dashboard> {
                         total: 200,
                         color: Colors.green,
                         image: Image.asset('assets/img/sausage.png', width: 20),
+                      ),
+                      StatCard(
+                        title: 'Water in ml',
+                        achieved: 3000,
+                        total: 4000,
+                        color: Colors.cyanAccent[400],
+                        image: Image.asset('assets/img/water.jpg', width: 30),
+                      ),
+                      StatCard(
+                        title: 'sleeping hours',
+                        achieved: 7,
+                        total: 8,
+                        color: Colors.pink[900],
+                        image: Image.asset('assets/img/sleep.png', width: 30),
                       ),
                     ],
                   ),

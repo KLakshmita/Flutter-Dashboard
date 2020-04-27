@@ -50,6 +50,10 @@ flutter:
    - assets/img/sausage.png
    - assets/img/shoe.png
    - assets/img/up_red.png
+   - assets/img/water.jpg
+   - assets/img/abc1.jpg
+   - assets/img/abc2.png
+   - assets/img/sleep.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
