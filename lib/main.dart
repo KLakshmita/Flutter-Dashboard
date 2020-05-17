@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 //import 'dashboard.dart';
 import 'package:fitness_app/pages/dashboard.dart';
+import 'package:flutter/rendering.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,3 +23,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//class Dashboard extends StatefulWidget {
+  //    @override
+ //     _DashboardState createState() => _DashboardState();
+ //     }
+
+
+
